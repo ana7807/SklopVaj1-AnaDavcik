@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rezervacija | Restavracija Tavankut</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="slike/restavracijaTavankutLogo.png" alt="Logotip" width="100">Restavracija Tavankut</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="jedilnik.html">Jedilnik</a></li>
+                <li><a href="recepti.html">Recepti</a></li>
+                <li><a href="rezervacija.html">Rezervacija</a></li>
+                <li><a href="o-nas.html">O nas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Rezervacija mize</h1>
+        <form action="rezervacija.html" method="GET">
+            <fieldset>
+                <legend>Kontaktni podatki</legend>
+                Ime in priimek: <input type="text" name="ime"><br>
+                Elektronska pošta: <input type="email" name="email"><br>
+                Telefon: <input type="tel" name="telefon"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Podrobnosti rezervacije</legend>
+                Datum: <input type="date" name="datum" ><br>
+                Ura: <input type="time" name="ura" min="11:00" max="22:00"><br>
+                Število oseb: <input type="number" name="osebe" min="1" max="12"><br>
+                Prostor: <select name="prostor">
+                    <option value="notranjost">Notranjost</option>
+                    <option value="terasa">Terasa</option>
+                    <option value="zasebnaSoba">Zasebna soba</option>
+                </select><br>
+                Priložnost:
+                <input type="radio" name="priloznost" value="brez" id="priloznostBrez"> <label for="priloznostBrez">Brez</label>
+                <input type="radio" name="priloznost" value="rojstniDan" id="priloznostRojstniDan"> <label for="priloznostRojstniDan">Rojstni dan</label>
+                <input type="radio" name="priloznost" value="obletnica" id="priloznostObletnica"> <label for="priloznostObletnica">Obletnica</label>
+                <input type="radio" name="priloznost" value="poslovnoSrecanje" id="priloznostPoslovnoSrecanje"> <label for="priloznostPoslovnoSrecanje">Poslovno srečanje</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Dodatne želje</legend>
+                Prehranske omejitve: <input type="checkbox" name="prehranskeOmejitve" value="vegetarijansko" id="vegetarijansko"> <label for="vegetarijansko">Vegetarijansko</label>
+                <input type="checkbox" name="prehranskeOmejitve" value="vegansko" id="vegansko"> <label for="vegansko">Vegansko</label>
+                <input type="checkbox" name="prehranskeOmejitve" value="brezGlutena" id="brezGlutena"> <label for="brezGlutena">Brez glutena</label>
+                <input type="checkbox" name="prehranskeOmejitve" value="brezLaktoze" id="brezLaktoze"> <label for="brezLaktoze">Brez laktoze</label><br>
+                Opombe: <textarea name="opombe" cols="50" rows="5"></textarea><br>
+                Soglasje: <input type="checkbox" name="soglasje"> Strinjam se z obdelavo osebnih podatkov.<br>
+            </fieldset>
+            <input type="submit" value="Pošlji rezervacijo">
+            <input type="reset" value="Ponastavi">
+        </form>
+    </main>
+
+    <footer>
+        <address>
+            Restavracija Tavankut <br>
+            Glavni trg 10, 2000 Maribor <br>
+            Telefon: <a href="tel:+38111111111">+381 1111 1111</a> <br>
+            E-pošta: <a href="mailto:info@restavracija-tavankut.si">info@restavracija-tavankut.si</a> <br>
+        </address>
+        <p>&copy; 2026 Ana Davčik</p>
+    </footer>
+</body>
+</html>
