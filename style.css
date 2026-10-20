@@ -104,7 +104,8 @@ address{
     font-style: normal;
 }
 .phone-and-email{
-    color: var(--background-color);
+    color: var(--highlight-color);
+    text-decoration: underline;
 }
 #copyright{
     text-align: right;
@@ -325,4 +326,83 @@ td:first-child {
     color: var(--text-color);
     padding-left:90%;
     text-align: right;
+}
+
+/*rezervacija------------------------------------------------------------------*/
+fieldset {
+    background-color: var(--card-color);
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px black;
+    border-top: 5px solid var(--primary-color);
+}
+legend {
+    font-weight: bold;
+    color: var(--background-color);
+    font-size: 1.1rem;
+    background-color: var(--primary-color);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+.res-field{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    padding:0px 10px;
+}
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="time"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px black;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--card-color);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s; }
+
+input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+input[type="reset"] {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--secondary-color);
+    padding: 10px 30px;
+    border-radius: 20px; 
+    margin-left: 8px;
+    transition: all 0.3s;
+    font-size: 1rem;
+}
+
+input[type="reset"]:hover {
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+}
+
+#buttons-div{
+    width: 100%;
+    display: flex;
+    justify-content: right;
 }

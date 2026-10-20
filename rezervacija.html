@@ -28,37 +28,51 @@
         <form action="rezervacija.html" method="GET">
             <fieldset>
                 <legend>Kontaktni podatki</legend>
-                Ime in priimek: <input type="text" name="ime"><br>
-                Elektronska pošta: <input type="email" name="email"><br>
-                Telefon: <input type="tel" name="telefon"><br>
+                <div class="res-field">Ime in priimek: <input type="text" name="ime" placeholder="Janez Novak"><br></div>
+                <div class="res-field">Elektronska pošta: <input type="email" name="email" placeholder="janez.novak@primer.si"><br></div>
+                <div class="res-field">Telefon: <input type="tel" name="telefon" placeholder="040111111"><br></div>
             </fieldset>
             <fieldset>
                 <legend>Podrobnosti rezervacije</legend>
-                Datum: <input type="date" name="datum" ><br>
-                Ura: <input type="time" name="ura" min="11:00" max="22:00"><br>
-                Število oseb: <input type="number" name="osebe" min="1" max="12"><br>
-                Prostor: <select name="prostor">
+                <div class="res-field">Datum: <input type="date" name="datum" ><br></div>
+                <div class="res-field">Ura: <input type="time" name="ura" min="11:00" max="22:00"><br></div>
+                <div class="res-field">Število oseb: <input type="number" name="osebe" min="1" max="12" placeholder="2"><br></div>
+                <div class="res-field">Prostor: <select name="prostor">
                     <option value="notranjost">Notranjost</option>
                     <option value="terasa">Terasa</option>
                     <option value="zasebnaSoba">Zasebna soba</option>
-                </select><br>
-                Priložnost:
-                <input type="radio" name="priloznost" value="brez" id="priloznostBrez"> <label for="priloznostBrez">Brez</label>
-                <input type="radio" name="priloznost" value="rojstniDan" id="priloznostRojstniDan"> <label for="priloznostRojstniDan">Rojstni dan</label>
-                <input type="radio" name="priloznost" value="obletnica" id="priloznostObletnica"> <label for="priloznostObletnica">Obletnica</label>
-                <input type="radio" name="priloznost" value="poslovnoSrecanje" id="priloznostPoslovnoSrecanje"> <label for="priloznostPoslovnoSrecanje">Poslovno srečanje</label><br>
+                </select><br></div>
+                <div class="res-field">Priložnost:
+                    <div>
+                        <input type="radio" name="priloznost" value="brez" id="priloznostBrez"> <label for="priloznostBrez">Brez</label>
+                        <input type="radio" name="priloznost" value="rojstniDan" id="priloznostRojstniDan"> <label for="priloznostRojstniDan">Rojstni dan</label>
+                        <input type="radio" name="priloznost" value="obletnica" id="priloznostObletnica"> <label for="priloznostObletnica">Obletnica</label>
+                        <input type="radio" name="priloznost" value="poslovnoSrecanje" id="priloznostPoslovnoSrecanje"> <label for="priloznostPoslovnoSrecanje">Poslovno srečanje</label><br>
+                    </div>
+                </div>
             </fieldset>
             <fieldset>
                 <legend>Dodatne želje</legend>
-                Prehranske omejitve: <input type="checkbox" name="prehranskeOmejitve" value="vegetarijansko" id="vegetarijansko"> <label for="vegetarijansko">Vegetarijansko</label>
-                <input type="checkbox" name="prehranskeOmejitve" value="vegansko" id="vegansko"> <label for="vegansko">Vegansko</label>
-                <input type="checkbox" name="prehranskeOmejitve" value="brezGlutena" id="brezGlutena"> <label for="brezGlutena">Brez glutena</label>
-                <input type="checkbox" name="prehranskeOmejitve" value="brezLaktoze" id="brezLaktoze"> <label for="brezLaktoze">Brez laktoze</label><br>
-                Opombe: <textarea name="opombe" cols="50" rows="5"></textarea><br>
-                Soglasje: <input type="checkbox" name="soglasje"> Strinjam se z obdelavo osebnih podatkov.<br>
+                <div class="res-field">Prehranske omejitve: 
+                    <div>
+                        <input type="checkbox" name="prehranskeOmejitve" value="vegetarijansko" id="vegetarijansko"> <label for="vegetarijansko">Vegetarijansko</label>
+                        <input type="checkbox" name="prehranskeOmejitve" value="vegansko" id="vegansko"> <label for="vegansko">Vegansko</label>
+                        <input type="checkbox" name="prehranskeOmejitve" value="brezGlutena" id="brezGlutena"> <label for="brezGlutena">Brez glutena</label>
+                        <input type="checkbox" name="prehranskeOmejitve" value="brezLaktoze" id="brezLaktoze"> <label for="brezLaktoze">Brez laktoze</label><br>
+                    </div>
+                </div>
+                <div class="res-field">Opombe: <textarea name="opombe" cols="50" rows="5" placeholder="Npr. potrebujemo otroški stolček"></textarea><br></div>
+                <div class="res-field">Soglasje: 
+                    <div>
+                        <input type="checkbox" name="soglasje"> Strinjam se z obdelavo osebnih podatkov.<br>
+                    </div>
+                </div>
+                
             </fieldset>
-            <input type="submit" value="Pošlji rezervacijo">
-            <input type="reset" value="Ponastavi">
+            <div id="buttons-div">
+                <input type="submit" value="Pošlji rezervacijo">
+                <input type="reset" value="Ponastavi">
+            </div>
         </form>
     </main>
 
