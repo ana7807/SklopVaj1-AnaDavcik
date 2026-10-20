@@ -8,6 +8,8 @@
     --secondary-accent-color:#a63902;
     --text-color:#314603;
     --card-color:white;
+    --secondary-card-color:#e7ddc6;
+    --highlight-color:#ffffb9;
 }
 *{
     box-sizing:border-box;
@@ -142,7 +144,7 @@ address{
     background-color: var(--secondary-accent-color);
 }
 
-.index-h2{
+h2{
     width: 100%;
     color: var(--primary-color);
     padding-bottom: 5px;
@@ -179,11 +181,13 @@ address{
     border-radius: 8px;
 
 }
-.featured-item figure figcaption {
+.captions {
     font-style: italic;
+    text-align: left;
     margin-top: 1px;
+    margin-bottom: 10px;
     color:var(--secondary-color);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 .featured-item h3 {
     margin-top: 10px;
@@ -205,4 +209,41 @@ address{
     border-radius: 20px;
     z-index: 10;
     box-shadow: 0 2px 5px black;
+}
+
+
+/*jedilnik-------------------------------------------------------------------------*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    background-color: var(--card-color);
+    box-shadow: 0 2px 8px black;
+    overflow: hidden;
+}
+thead th {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 15px;
+    text-align: left;
+}
+tbody tr:nth-child(even) {
+    background-color: var(--secondary-card-color);
+}
+td, th {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--secondary-color);
+}
+tbody tr:hover {
+    background-color: var(--highlight-color);
+    transition: background-color 0.2s ease;
+}
+td:last-child {
+    text-align: right;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+td:first-child {
+    font-weight: bold;
+    color: var(--primary-color);
 }
