@@ -1,0 +1,5 @@
+2026-10-12 | 27baf84 | dodana stranica o nas (HEAD -> main, tag: Vaja1, origin/main)
+2026-10-09 | d8f0c1b | dodata stranica recepti, ispravljeni captions za slike na pocetnoj stranici
+2026-10-09 | 2384dcf | dodata stranica za rezervaciju
+2026-10-09 | 86299af | malo ispravljena glavna strana, dodat jelovnik
+2026-10-09 | 36151b2 | pocetna stranica i slike dodate

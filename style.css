@@ -1,0 +1,108 @@
+/*vse----------------------------------------------------------*/
+
+:root{
+    --background-color:#f8f0db;
+    --primary-color:#557a06;
+    --secondary-color:#829a50;
+    --accent-color:#dc3902;
+    --secondary-accent-color:#a63902;
+    --text-color:#314603;
+}
+*{
+    box-sizing:border-box;
+}
+body{
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color:var(--background-color);
+    color:var(--text-color);
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+header{
+    background-color:var(--primary-color);
+    height: 120px;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+main{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+footer{
+    background-color:var(--primary-color);
+    color:var(--background-color);
+    padding: 10px;
+    border-top: 5px solid var(--secondary-color);
+}
+
+a{
+    text-decoration: none;
+}
+nav{
+    margin-left: auto;
+}
+ul{
+    display: flex;
+    margin-left:20px;
+}
+li{
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+.button{
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin: 0px 10px;
+    transition: background-color 0.3s ease;
+}
+.button:hover{
+    background-color: var(--secondary-color);
+}
+#current-page-button{
+    background-color: var(--accent-color);
+    font-weight: bold;
+}
+#current-page-button:hover{
+    background-color: var(--secondary-accent-color);
+}
+
+#logo{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 3px solid var(--accent-color);
+    margin: 5px;
+    justify-content: flex-start;
+}
+#restoraunt-name{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--background-color);
+    margin-left: 10px;
+    justify-content: flex-start;
+}
+
+address{
+    font-style: normal;
+}
+.phone-and-email{
+    color: var(--background-color);
+}
+#copyright{
+    text-align: right;
+    margin-top:0;
+}
