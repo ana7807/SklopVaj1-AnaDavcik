@@ -11,6 +11,7 @@
     --secondary-card-color:#e7ddc6;
     --highlight-color:#ffffb9;
     --closed-color:#ffbbbb;
+    --shadow-color: rgba(65, 65, 65, 0.5);
 }
 *{
     box-sizing:border-box;
@@ -49,6 +50,12 @@ footer{
     color:var(--background-color);
     padding: 10px;
     border-top: 5px solid var(--secondary-color);
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+footer p {
+    margin-bottom: 0;
 }
 
 a{
@@ -155,7 +162,7 @@ h2{
 
 .featured-container { 
     display: flex; 
-    gap: 1.5rem; 
+    gap: 12px; 
     justify-content: space-between;
 }
 .featured-item {
@@ -164,7 +171,7 @@ h2{
     flex-direction: column;
     background-color: var(--card-color);
     border-radius: 12px;
-    box-shadow: 0 4px 15px black;
+    box-shadow: 0 2px 5px var(--shadow-color);
     padding: 30px;
     position: relative;
     overflow: hidden;
@@ -210,7 +217,7 @@ h2{
     font-weight: bold;
     border-radius: 20px;
     z-index: 10;
-    box-shadow: 0 2px 5px black;
+    box-shadow: 0 2px 5px var(--shadow-color);
 }
 
 
@@ -220,7 +227,7 @@ table {
     border-collapse: collapse;
     margin-bottom: 40px;
     background-color: var(--card-color);
-    box-shadow: 0 2px 8px black;
+    box-shadow: 0 2px 5px var(--shadow-color);
     overflow: hidden;
 }
 thead th {
@@ -243,6 +250,7 @@ tbody tr:hover {
 td:last-child {
     text-align: right;
     font-weight: bold;
+    white-space: nowrap;
     color: var(--primary-color);
 }
 td:first-child {
@@ -282,12 +290,12 @@ td:first-child {
     background-color: var(--card-color);
     border-radius: 12px;
     padding: 15px;
-    box-shadow: 0 4px 12px black;
+    box-shadow: 0 2px 5px var(--shadow-color);
     margin-bottom: 20px;
 }
 .recipe-upper-part {
     display: flex;
-    gap: 2rem;
+    gap: 15px;
     margin-bottom: 20px;
 }
 .recipe-upper-part figure, .recipe-upper-part .ingredients-section {
@@ -337,7 +345,7 @@ fieldset {
     border-radius: 10px;
     padding: 12px;
     margin-bottom: 12px;
-    box-shadow: 0 2px 8px black;
+    box-shadow: 0 2px 5px var(--shadow-color);
     border-top: 5px solid var(--primary-color);
 }
 legend {
@@ -369,8 +377,10 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="date"], 
 
 input:focus, select:focus, textarea:focus {
     outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px black;
+    border: 3px solid var(--primary-color);
+}
+input[type="radio"], input[type="checkbox"] {
+    accent-color: var(--primary-color);
 }
 
 input[type="submit"] {
@@ -420,7 +430,7 @@ input[type="reset"]:hover {
 .about-image{
     background-color: var(--card-color);
     border-radius: 8px;
-    box-shadow: 0 4px 10px black;
+    box-shadow: 0 2px 5px var(--shadow-color);
     padding: 30px;;
     flex:1;
 }
@@ -438,7 +448,7 @@ table.working-hours {
     border-collapse: collapse;
     margin: 12px 0;
     background-color: var(--card-color);
-    box-shadow: 0 4px 12px black;
+    box-shadow: 0 2px 5px var(--shadow-color);
     overflow: hidden;
 }
 table.working-hours tr{
@@ -449,6 +459,7 @@ table.working-hours thead th {
     color: var(--background-color);
     padding: 5px 8px;
     text-align: left;
+    border-left:3px solid var(--primary-color);
 }
 table.working-hours tbody th {
     padding: 12px 8px;
@@ -479,7 +490,7 @@ iframe {
     height: 400px;
     border: none;
     border-radius: 8px;
-    box-shadow: 0 2px 10px black;
+    box-shadow: 0 2px 5px var(--shadow-color);
     margin-top: 10px;
 }
 #map-button{
