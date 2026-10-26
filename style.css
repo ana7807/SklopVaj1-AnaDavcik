@@ -26,6 +26,12 @@ body{
     padding: 0;
     margin: 0;
     font-size: 1rem;
+    overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 header{
@@ -67,6 +73,9 @@ nav{
 ul{
     display: flex;
     margin-left:20px;
+}
+nav ul{
+    background-color: var(--primary-color);
 }
 li{
     list-style-type: none;
@@ -496,4 +505,74 @@ iframe {
 #map-button{
     text-decoration: underline;
     color:var(--primary-color);
+}
+
+
+/*telefon i tablet------------------------------------------------------------------*/
+.menu-checkbox, 
+.menu-button {
+    display: none;
+}
+
+@keyframes fadeInMenu {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 599px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 1rem;
+    }
+
+    .menu-button {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--barva-besedilo);
+    }
+
+    .menu-checkbox {
+        display: none;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        order: 3;
+        margin-top: 1rem;
+        animation: fadeInMenu 0.3s ease;
+    }
+
+    .menu-checkbox:checked ~ nav {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.8rem;
+        background-color: var(--barva-siva-svetla);
+        border-radius: 6px;
+    }
+}
+
+@media (min-width: 600px) {
+  .menu-toggle {
+    display: none;
+  }
 }

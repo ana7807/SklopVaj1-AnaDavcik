@@ -1,4 +1,11 @@
-2026-10-12 | 27baf84 | dodana stranica o nas (HEAD -> main, tag: Vaja1, origin/main)
+2026-10-21 | 1948e64 | popravki majhnih napak (HEAD -> main, tag: Vaja2)
+2026-10-21 | 6276544 | css za o nas (origin/main)
+2026-10-21 | b41e941 | css za rezervacijo
+2026-10-20 | 8652894 | css za recepte koncan
+2026-10-20 | e1ca930 | css za jedilnik koncan, spremembe zaradi prekrivanja selektorja v indexu
+2026-10-20 | 231d81a | css za index koncan
+2026-10-20 | 5012f25 | narejen css za skupne elemente vseh strani
+2026-10-12 | 27baf84 | dodana stranica o nas (tag: Vaja1)
 2026-10-09 | d8f0c1b | dodata stranica recepti, ispravljeni captions za slike na pocetnoj stranici
 2026-10-09 | 2384dcf | dodata stranica za rezervaciju
 2026-10-09 | 86299af | malo ispravljena glavna strana, dodat jelovnik
