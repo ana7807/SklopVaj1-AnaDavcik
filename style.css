@@ -578,7 +578,7 @@ nav a, .button, input[type="submit"], input[type="reset"], .recipe-button {
     box-shadow: 0 8px 18px var(--shadow-color);
 }
 
-.introduction h1 {
+.introduction h1, .introduction p, .introduction a {
     animation: heading-entrance 0.9s ease-out both;
 }
 @keyframes heading-entrance {
