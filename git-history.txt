@@ -1,5 +1,9 @@
-2026-10-21 | 1948e64 | popravki majhnih napak (HEAD -> main, tag: Vaja2)
-2026-10-21 | 6276544 | css za o nas (origin/main)
+2026-10-27 | a4cc029 | dodane ikone na vse strani (HEAD -> main, tag: vaja3, origin/main)
+2026-10-27 | b905100 | responsive dizajn za vse strani, dark mode
+2026-10-27 | 6b490d4 | responsive meni in index strana
+2026-10-26 | 45b0728 | ikone glavnega menija
+2026-10-21 | 1948e64 | popravki majhnih napak (tag: Vaja2)
+2026-10-21 | 6276544 | css za o nas
 2026-10-21 | b41e941 | css za rezervacijo
 2026-10-20 | 8652894 | css za recepte koncan
 2026-10-20 | e1ca930 | css za jedilnik koncan, spremembe zaradi prekrivanja selektorja v indexu
