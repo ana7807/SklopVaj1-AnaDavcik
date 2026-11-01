@@ -43,13 +43,13 @@
         <h1>Rezervacija mize</h1>
         <form action="rezervacija.html" method="GET" novalidate>
             <fieldset>
-                <legend>Kontaktni podatki</legend>
+                <legend><i class="fa-solid fa-user"></i> Kontaktni podatki</legend>
                 <div class="res-field">Ime in priimek: <input type="text" name="ime" placeholder="Janez Novak" id="ime"><br></div>
                 <div class="res-field">Elektronska pošta: <input type="email" name="email" placeholder="janez.novak@primer.si" id="email"><br></div>
                 <div class="res-field">Telefon: <input type="tel" name="telefon" placeholder="040123456" id="telefon"><br></div>
             </fieldset>
             <fieldset>
-                <legend>Podrobnosti rezervacije</legend>
+                <legend><i class="fa-solid fa-calendar-days"></i> Podrobnosti rezervacije</legend>
                 <div class="res-field">Datum: <input type="date" name="datum" id="datum"><br></div>
                 <div class="res-field">Ura: <input type="time" name="ura" min="11:00" max="22:00" id="ura"><br></div>
                 <div class="res-field">Število oseb: <input type="number" name="osebe" min="1" max="12" placeholder="2" id="osebe"><br></div>
@@ -68,7 +68,7 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Dodatne želje</legend>
+                <legend><i class="fa-solid fa-plus"></i> Dodatne želje</legend>
                 <div class="res-field">Prehranske omejitve: 
                     <div>
                         <input type="checkbox" name="prehranskeOmejitve" value="vegetarijansko" id="vegetarijansko"> <label for="vegetarijansko">Vegetarijansko</label>
