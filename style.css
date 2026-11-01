@@ -957,6 +957,37 @@ nav a, .button, input[type="submit"], input[type="reset"], .recipe-button {
     }
 }
 
+
+
+
+
+/*javascript--------------------------------------------------------------------*/
+#menu-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.filter-button {
+    background-color: var(--card-color);
+    color: var(--text-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: inherit;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-button:hover {
+    background-color: var(--highlight-color);
+}
+.filter-button.active {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+
 /*reduced motion*/
 @media (prefers-reduced-motion: reduce) {
     html {
