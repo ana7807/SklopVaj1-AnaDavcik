@@ -1003,9 +1003,13 @@ nav a, .button, input[type="submit"], input[type="reset"], .recipe-button {
     border-radius: 8px;
     box-shadow: 0 2px 5px var(--shadow-color);
 }
-
 #reservation-summary:empty {
     display: none;
+}
+
+.portion-input {
+    width: 65px;
+    margin-left: 5px;
 }
 
 
