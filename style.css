@@ -987,6 +987,27 @@ nav a, .button, input[type="submit"], input[type="reset"], .recipe-button {
     color: var(--background-color);
 }
 
+.input-error {
+    border: 2px solid red !important;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+#reservation-summary {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--card-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+#reservation-summary:empty {
+    display: none;
+}
+
 
 /*reduced motion*/
 @media (prefers-reduced-motion: reduce) {
