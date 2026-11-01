@@ -19,8 +19,6 @@ function updateRecipePortions(recipe) {
     ingredientAmounts.forEach(amount => {
         const originalAmount = Number(amount.dataset.kolicina);
         const newAmount = originalAmount * selectedPortions / originalPortions;
-
-        // Rounds the result to at most one decimal place.
         amount.textContent = Number(newAmount.toFixed(1))
             .toString()
             .replace(".", ",");
